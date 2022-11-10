@@ -21,7 +21,7 @@ body {
   display: grid;
   place-content: center;
   justify-items: center;
-  margin: 8rem auto;
+  margin: 9rem auto;
   max-width: 64rem;
 }
 @media (max-width: 650px) {
@@ -61,6 +61,7 @@ body {
 }
 .header__logo {
   margin-bottom: 4rem;
+  height: 3.9rem;
 }
 @media (max-width: 650px) {
   .header__logo {
