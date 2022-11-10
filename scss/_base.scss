@@ -37,7 +37,7 @@ body {
   display: grid;
   place-content: center;
   justify-items: center;
-  margin: 9rem auto;
+  margin: 9.2rem auto;
   max-width: 64rem;
 
   @include respond(phone) {
