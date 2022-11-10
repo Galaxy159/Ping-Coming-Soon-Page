@@ -52,7 +52,7 @@ body {
 
 .header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 @media (max-width: 650px) {
   .header {
