@@ -21,7 +21,7 @@ body {
   display: grid;
   place-content: center;
   justify-items: center;
-  margin: 9rem auto;
+  margin: 8rem auto;
   max-width: 64rem;
 }
 @media (max-width: 650px) {
@@ -210,4 +210,5 @@ body {
   font-weight: 300;
   line-height: 1.5rem;
   color: #969696;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
