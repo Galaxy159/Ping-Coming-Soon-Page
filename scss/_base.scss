@@ -1,9 +1,18 @@
 // Colors
-$color-primary-blue: hsl(223, 87%, 63%);
-$color-secondary-blue: hsl(223, 100%, 88%);
-$color-secondary-red: hsl(354, 100%, 66%);
-$color-gray: hsl(0, 0%, 59%);
-$color-blue-dark: hsl(209, 33%, 12%);
+$color-primary-blue: #4f7df3;
+$color-secondary-blue: #c2d3ff;
+$color-secondary-red: #ff5263;
+$color-gray: #969696;
+$color-blue-dark: #151f29;
+
+// Media
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 650px) {
+      @content;
+    }
+  }
+}
 
 *,
 ::before,
@@ -21,6 +30,29 @@ html {
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 2rem;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  margin: 8rem auto;
+  max-width: 64rem;
+
+  @include respond(phone) {
+    max-width: 32rem;
+  }
+}
+
+.hero {
+  max-width: 64rem;
+  margin-bottom: 7.2rem;
+
+  @include respond(phone) {
+    max-width: 32rem;
+    margin-bottom: 12rem;
+  }
 }
 
 .attribution {

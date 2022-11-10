@@ -21,9 +21,44 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
-
+    <main class="container">
+      <header class="header">
+        <img src="./images/logo.svg" alt="Logo" class="header__logo" />
+        <h1 class="header__headline">We are launching <span>soon!</span></h1>
+        <p class="header__text">Subscribe and get notified</p>
+      </header>
+      <div class="cta">
+        <div>
+          <input
+            type="text"
+            placeholder="Your email address..."
+            class="cta__input"
+          />
+          <p class="cta__input--error">Please provide a valid email address</p>
+        </div>
+        <button class="cta__btn">Notify Me</button>
+      </div>
+      <hero>
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="Illustration of dashboard"
+          class="hero"
+        />
+      </hero>
+      <footer class="footer">
+        <div class="footer__icons">
+          <ion-icon name="logo-facebook" class="footer__icons--icon"></ion-icon>
+          <ion-icon name="logo-twitter" class="footer__icons--icon"></ion-icon>
+          <ion-icon
+            name="logo-instagram"
+            class="footer__icons--icon"
+          ></ion-icon>
+        </div>
+        <p class="footer__copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </main>
     <footer>
       <p class="attribution">
         Challenge by
@@ -37,5 +72,15 @@
         >.
       </p>
     </footer>
+
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
